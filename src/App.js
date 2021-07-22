@@ -5,7 +5,10 @@ import './App.css';
 import TotalDisplay from './components/TotalDisplay';
 import CalcButton from './components/CalcButton';
 
+import reducer, {initialState} from './reducers/index';
+
 function App() {
+  const [state, dispatch] = const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
     <div className="App">
